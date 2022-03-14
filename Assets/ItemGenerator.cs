@@ -82,26 +82,6 @@ public class ItemGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coneclone =GameObject.Find("TrafficConePrefab(Clone)");
-
-        coinclone=GameObject.Find("CoinPrefab(Clone)");
-
-        carclone=GameObject.Find("CarPrefab(Clone)");
-       
-
-      
-        this.maincamera=GameObject.Find("Main Camera");
-       if(coneclone.transform.position.z<maincamera.transform.position.z)
-        {
-           Destroy(coneclone);
-        }
-        if(coinclone.transform.position.z<maincamera.transform.position.z)
-        {
-            Destroy(coinclone);
-        }
-        if(carclone.transform.position.z<maincamera.transform.position.z)
-        {
-            Destroy(carclone);
-        }
+        
     }
 }
